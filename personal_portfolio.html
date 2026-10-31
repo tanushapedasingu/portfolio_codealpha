@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Hello, I'm Pedasingu Tanusha</h2>
+    <p>Frontend Developer</p>
+    <a class="button" href="#projects">View My Projects</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a student interested in web development.
+      I enjoy creating simple and responsive websites.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <u1>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>Python</li>
+    </u1>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+      <h3>Image Gallery</h3>
+      <p>A responsive image gallery using HTML, CSS and JavaScript.</p>
+    </div>
+
+    <div class="project">
+      <h3>Calculator</h3>
+      <p>A simple calculator made using JavaScript.</p>
+    </div>
+
+    <div class="project">
+      <h3>Smart Irrigation System</h3>
+      <p>A project designed to automate plant watering.</p>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>You can add your resume PDF here</p>
+    <a class="button" href="resume.pdf" download>Download Resume</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: abc@gmail.com</p>
+    <p>Phone: +91 79*** ****3</p>
+  </section>
+  <footer>
+    <p> 2026 Pedasingu Tanusha. All Rights Reserved.</p>
+  </footer>
+  </body>
+</html>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: white;
+    color: black;
+  }
+
+  header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  section {
+    padding: 70px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+
+  #home {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .button {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  u1 {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    background: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  .project {
+    background: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .project:hover {
+    transform: translateY(-5px);
+  }
+
+  footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  @media (max-width: 600px) {
+    nav a {
+      display: block;
+      margin:8px;
+    }
+  }
+</style>
